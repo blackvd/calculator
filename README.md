@@ -1,9 +1,9 @@
+## Before lauch this project
+clone or download the project and do `cd PATH_TO_THE_PROJECT` then launch `yarn install` or `npm install`
+
 ## Available Scripts
 
 In the project directory, you can run:
-
-### Before lauch this project
-clone or download the project and do `cd PATH_TO_THE_PROJECT` then launch `yarn install` or `npm install`
 
 ### `npm start`
 
