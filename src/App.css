@@ -1,22 +1,32 @@
 .App {
   text-align: center;
+  background-color: #6200ee;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
+.calcInput{
+  width: 400px;
+  height: 50px;
+  border-radius: 30px;
+  color: black;
+  background: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.calcBtn{
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 2rem;
   color: white;
+  background: #03dac5;
+  border: 2px solid #03dac5;
 }
 
-.App-link {
-  color: #09d3ac;
+.calcBtn:hover{
+  background: white;
+  color: black;
 }
