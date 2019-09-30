@@ -33,16 +33,32 @@ class App extends React.Component {
         }
         break
       case "=":
-        this.setState({ userInput: eval(this.state.userInput) })
-        console.log(this.state.userInput)
+        try {
+          this.setState({ userInput: eval(this.state.userInput) })
+          console.log(this.state.userInput)
+        } catch (error) {
+          alert("We can't do this operation")
+          this.setState({ userInput: '' })
+        }
         break
       case "+/-":
         this.setState({ userInput: eval(this.state.userInput + " * (-1)") })
         break
+      case "%":
+      case "/":
+      case "*":
+      case "-":
+      case "+":
+        this.setState({ userInput: this.state.userInput + " " + i + " " })
+        break
       default:
-        this.setState({
-          userInput: this.state.userInput + i
-        })
+        if (isNumber(this.state.userInput)) {
+          this.setState({ userInput: "" + i })
+        } else {
+          this.setState({
+            userInput: this.state.userInput + i
+          })
+        }
         break
     }
   }
